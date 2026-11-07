@@ -5,6 +5,9 @@ plugins {
 group = 'com.chaossmp.lorebook'
 version = '1.0'
 
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
+
 repositories {
     mavenCentral()
     maven {
@@ -14,12 +17,6 @@ repositories {
 
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
-}
-
-java {
-    toolchain {
-        languageVersion = JavaVersion.of(21)
-    }
 }
 
 tasks.withType(JavaCompile).configureEach {
