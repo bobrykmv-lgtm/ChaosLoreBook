@@ -1,0 +1,12 @@
+name: ChaosLoreBook
+version: 1.0
+main: com.chaossmp.lorebook.ChaosLoreBook
+api-version: '1.21'
+author: W1nUser
+description: Лор-книга для ChaosSMP, которая исчезает после закрытия.
+commands:
+  lore:
+    description: Получить хроники ChaosSMP
+    permission: chaossmp.lore
+    permission-message: §cУ вас нет прав на эту команду!
+    usage: /lore
